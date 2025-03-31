@@ -1,0 +1,41 @@
+Commands to create project
+move inside your project then write it on terminal
+ npm create vite@latest ./ -- --template react 
+
+after vite creates react template project install npm
+ npm i
+
+install tailwind css
+ npm install tailwindcss @tailwindcss/vite
+
+Import this in your CSS file
+ @import "tailwindcss";
+
+Then run in terminal
+ npm run dev
+
+Hurray basic app created 
+
+Add google fonts using import
+ @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+Need to install react icons also
+ npm i react-icons
+
+Need react-hot-toast package for contact form notification
+ npm install react-hot-toast
+
+Need email.js for sending mail from our application 
+ npm install --save @emailjs/browser
+
+for animation need to install framer motion library 
+ npm i framer-motion 
+
+
+also make a build file to deploy 
+
+For deploying to gihub pages 
+ npm install gh-pages --save-dev
+
+
+
