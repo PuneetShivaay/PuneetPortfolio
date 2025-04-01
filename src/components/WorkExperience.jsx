@@ -21,7 +21,7 @@ const WorkExperience = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
-        className="space-y-8 p-10"
+        className="space-y-8 mt-10 p-1"
       >
         {CognizantExperience.map((CognizantExperience, index) => (
           <motion.div
@@ -49,7 +49,7 @@ const WorkExperience = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 1, delay: index * 0.5 }}
                   key={index}
-                  className="p-10"
+                  className="p-2"
                 >
                   <h3 className="text-xl font-semibold">
                     Client: {CognizantProjectExperience.client}
@@ -63,7 +63,7 @@ const WorkExperience = () => {
                   {/* <p className="mt-2">
                     {CognizantProjectExperience.description}
                   </p> */}
-                  <p className="mt-2">
+                  <p className="mt-2 text-base">
                     {CognizantProjectExperience.description
                       .split("\n")
                       .map((line, lineIndex) => (
@@ -83,7 +83,7 @@ const WorkExperience = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.5 }}
-        className=" p-10"
+        className="mt-10 p-1"
       >
         {YontechExperience.map((YontechExperience, index) => (
           <motion.div
@@ -110,7 +110,7 @@ const WorkExperience = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, delay: index * 0.5 }}
                 key={index}
-                className="mb-6 p-10"
+                className="mb-2 p-2"
               >
                 <h3 className="text-xl font-semibold">
                   Client: {YontechProjectExperience.client}
@@ -118,10 +118,10 @@ const WorkExperience = () => {
                 <p className="text-lg">
                   Project: {YontechProjectExperience.project}
                 </p>
-                <p className="text-sm text-stone-300">
+                <p className="text-sm  text-stone-300">
                   {YontechProjectExperience.duration}
                 </p>
-                <p className="mt-2">
+                <p className="text-base mt-2">
                   {YontechProjectExperience.description
                     .split("\n")
                     .map((line, lineIndex) => (

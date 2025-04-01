@@ -14,20 +14,14 @@ import {
   SiFlutter,
   SiDart,
   SiJira,
-  SiTrello,
   SiJupyter,
   SiNumpy,
   SiPandas,
 } from "react-icons/si";
 import { DiVisualstudio } from "react-icons/di";
-import { DiRedis } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { BsBootstrap } from "react-icons/bs";
-import { FaExchangeAlt } from "react-icons/fa";
-
-import { MdApi } from "react-icons/md"; // Material Design Icons
 
 const iconVaiants = (duration) => ({
   initial: { y: -10 },
@@ -58,7 +52,7 @@ const Technologies = () => {
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-wrap text-center items-center gap-3 "
+        className="flex flex-wrap text-center items-center justify-center gap-4 "
       >
         <motion.div
           variants={iconVaiants(1, 5)}
@@ -66,7 +60,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-1 border-stone-50/30 m-1 p-3"
         >
-          <RiReactjsLine className="text-7xl text-cyan-400" />
+          <RiReactjsLine className="text-6xl text-cyan-400" />
         </motion.div>
 
         <motion.div
@@ -75,7 +69,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-1 border-stone-50/30 m-1 p-3"
         >
-          <SiJavascript className="text-7xl text-yellow-500 " />
+          <SiJavascript className="text-6xl text-yellow-500 " />
         </motion.div>
 
         <motion.div
@@ -84,7 +78,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-1 border-stone-50/30 m-1 p-3"
         >
-          <FaNodeJs className="text-7xl text-green-500" />
+          <FaNodeJs className="text-6xl text-green-500" />
         </motion.div>
 
         <motion.div
@@ -93,7 +87,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-1 border-stone-50/30 m-1 p-3"
         >
-          <SiPython className="text-7xl text-yellow-400" />
+          <SiPython className="text-6xl text-yellow-400" />
         </motion.div>
 
         <motion.div
@@ -102,7 +96,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-1 border-stone-50/30 m-1 p-3"
         >
-          <SiMongodb className="text-7xl text-green-500" />
+          <SiMongodb className="text-6xl text-green-500" />
         </motion.div>
 
         <motion.div
@@ -111,7 +105,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-1 border-stone-50/30 m-1 p-3"
         >
-          <SiFirebase className="text-7xl text-[#FFCA28]" />
+          <SiFirebase className="text-6xl text-[#FFCA28]" />
         </motion.div>
 
         <motion.div
@@ -120,7 +114,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-1 border-stone-50/30 m-1 p-3"
         >
-          <SiHtml5 className="text-7xl text-red-400" />
+          <SiHtml5 className="text-6xl text-red-400" />
         </motion.div>
 
         <motion.div
@@ -129,7 +123,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-1 border-stone-50/30 m-1 p-3"
         >
-          <SiCss3 className="text-7xl text-sky-700" />
+          <SiCss3 className="text-6xl text-sky-700" />
         </motion.div>
         <motion.div
           variants={iconVaiants(4, 5)}
@@ -137,7 +131,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-1 border-stone-50/30 m-1 p-3"
         >
-          <SiTailwindcss className="text-7xl text-[#06B6D4]" />
+          <SiTailwindcss className="text-6xl text-[#06B6D4]" />
         </motion.div>
         <motion.div
           variants={iconVaiants(7, 8)}
@@ -145,7 +139,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-1 border-stone-50/30 m-1 p-3"
         >
-          <BsBootstrap className="text-7xl text-[#7952B3]" />
+          <BsBootstrap className="text-6xl text-[#7952B3]" />
         </motion.div>
 
         <motion.div
@@ -154,7 +148,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-1 border-stone-50/30 m-1 p-3"
         >
-          <SiWordpress className="text-7xl text-[#21759B]" />
+          <SiWordpress className="text-6xl text-[#21759B]" />
         </motion.div>
         <motion.div
           variants={iconVaiants(2, 7)}
@@ -162,7 +156,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-1 border-stone-50/30 m-1 p-3"
         >
-          <SiGithub className="text-7xl text-gray-200"/>
+          <SiGithub className="text-6xl text-gray-200"/>
         </motion.div>
 
         <motion.div
@@ -171,7 +165,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-1 border-stone-50/30 m-1 p-3"
         >
-          <SiMysql className="text-7xl text-[#4479A1]" />
+          <SiMysql className="text-6xl text-[#4479A1]" />
         </motion.div>
         <motion.div
           variants={iconVaiants(1, 2)}
@@ -179,7 +173,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-1 border-stone-50/30 m-1 p-3"
         >
-          <DiVisualstudio className="text-7xl text-sky-700" />
+          <DiVisualstudio className="text-6xl text-sky-700" />
         </motion.div>
 
         <motion.div
@@ -188,7 +182,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-1 border-stone-50/30 m-1 p-3"
         >
-          <SiFlutter className="text-7xl text-sky-400" />
+          <SiFlutter className="text-6xl text-sky-400" />
         </motion.div>
         <motion.div
           variants={iconVaiants(4, 5)}
@@ -196,7 +190,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-1 border-stone-50/30 m-1 p-3"
         >
-          <SiDart className="text-7xl text-sky-800" />
+          <SiDart className="text-6xl text-sky-800" />
         </motion.div>
 
         <motion.div
@@ -205,7 +199,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-1 border-stone-50/30 m-1 p-3"
         >
-          <SiGit className="text-7xl text-red-500" />
+          <SiGit className="text-6xl text-red-500" />
         </motion.div>
 
         <motion.div
@@ -214,7 +208,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-1 border-stone-50/30 m-1 p-3"
         >
-          <SiJira className="text-7xl text-blue-500" />
+          <SiJira className="text-6xl text-blue-500" />
         </motion.div>
 
         <motion.div
@@ -223,7 +217,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-1 border-stone-50/30 m-1 p-3"
         >
-          <SiJupyter className="text-7xl text-orange-500" />
+          <SiJupyter className="text-6xl text-orange-500" />
         </motion.div>
 
         <motion.div
@@ -232,7 +226,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-1 border-stone-50/30 m-1 p-3"
         >
-          <SiPandas className="text-7xl text-yellow-500" />
+          <SiPandas className="text-6xl text-yellow-500" />
         </motion.div>
       </motion.div>
     </div>

@@ -21,8 +21,6 @@ import { DiRedis } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 
-import { desc, label } from "framer-motion/client";
-
 export const NAVIGATION_LINKS = [
   { label: "Technologies", href:"#technologies"},
   // { label: "Skills", href: "#skills" },
@@ -59,10 +57,10 @@ export const ProjectContent = [
   },
   {
     id: 3,
-    name: "Super Market Management System",
+    name: "SuperMarket Management",
     description:
-      "A market management application built with React and Java for efficient inventory management, including features like product boards, shopping, and admin access.",
-    image: projectImage3,
+      "A market management application built with React and Java for efficient inventory management with admin access.",
+    image: projectImage6,
     githubLink: "https://github.com/PuneetShivaay/SuperMarket-Management-System",
   },
   {
@@ -242,21 +240,21 @@ export const YontechProjectExperience = [
 
 export const EducationContent = [
   {
-    degree: "Bachelor of Technology in  Computer Science and Engineering",
+    degree: "Bachelor of Technology in  Computer Science and Engineering - 70%",
     institution: "Dr. A.P.J. Abdul Kalam Technical University, Lucknow",
     duration: "August 2016 - September 2020",
     description:
       "Focused on web development, programming languages, and database management. Actively involved in coding clubs and hackathons, where I developed several web applications using HTML, CSS, JavaScript, and WordPress. Completed a project on developing a Deep Learning based Chatbot for Medical Assistance. Using Python, TensorFlow, Pandas.",
   },
   {
-    degree: "Intermediate (12th Grade)",
+    degree: "Intermediate (12th Grade) - 77%",
     institution: "Uttar Pradesh State Board",
     duration: "July 2014 - June 2016",
     description:
     "Got 1st Prize in Public Speaking by State Bank of India(2015) and 2nd Prize in School Cricket Match (2016). Involved in many activities like School Play and Educational Fest.",
   },
   {
-    degree: "Matriculation (10th Grade)",
+    degree: "Matriculation (10th Grade) - 87%",
     institution: "Uttar Pradesh State Board",
     duration: "July 2013 - June 2014",
     description:
