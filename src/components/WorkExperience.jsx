@@ -17,6 +17,8 @@ const WorkExperience = () => {
       >
         Work Experience
       </motion.h2>
+      <p className="text-sm text-stone-300 text-center">Sep 2020 - Present (4.6+ Years)</p>
+
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -29,7 +31,7 @@ const WorkExperience = () => {
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, delay: index * 0.5 }}
             key={index}
-            className="rounded-xl border border-stone-50/30 bg-white/10 p-4"
+            className="rounded-xl border border-stone-50/30 bg-white/10 p-2"
           >
             <h3 className="text-2xl text-center font-semibold">
               {CognizantExperience.title}

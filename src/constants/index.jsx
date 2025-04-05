@@ -35,7 +35,7 @@ export const HeroContent = {
   name: "PUNEET KUMAR",
   greet: "Hello there! 👋🏻",
   description:
-  "Software Engineer with experience in building and optimizing web applications using React, JavaScript, and Python. Demonstrated success in improving efficiency, ensuring code quality, and leading projects. Award-winning for innovation and impactful presentations.",
+  "A passionate Front-end developer based in India, I strive to create captivating and user-friendly web experiences. With a strong foundation in HTML, CSS, and JavaScript, I specialize in building responsive and dynamic interfaces using modern frameworks and libraries like React. My goal is to blend creativity with functionality, delivering websites that not only look great but also provide seamless user interactions.",
 };
 
 export const ProjectContent = [
@@ -90,10 +90,7 @@ export const ProjectContent = [
 ];
 
 export const BioContent = [
-  "Puneet Kumar graduated with a Bachelor of Technology in Computer Science and Engineering from Dr. A.P.J. Abdul Kalam Technical University in 2020. He then immersed himself in the world of web development at Cognizant Technology Solutions for over four years, where he honed his skills in both front-end and full-stack development, working on projects for major clients like Google and Verizon.",
-  "Puneet's expertise spans a wide range of technologies, including React, JavaScript, Python, Java, and Flutter, allowing him to deliver versatile and robust solutions. He is particularly adept at optimizing application performance, enhancing security, and implementing innovative features, as evidenced by his work on Chrome extensions and reusable UI components.",
-  "Recognized for his impactful presentations and creative problem-solving, Puneet consistently delivers high-quality applications and fosters a collaborative team environment.",
-  ,
+  "Puneet Kumar is a versatile Full-Stack Developer who launched his IT career after graduating with a B.Tech in Computer Science and Engineering in 2020. During his four+ years at Cognizant Technology Solutions, he contributed significantly to projects for industry giants like Google and Verizon, gaining deep expertise across the development lifecycle. Proficient in a broad tech stack including React, JavaScript, Python, Java, and Flutter, Puneet is adept at crafting robust and scalable solutions, with a strong focus on performance optimization, security enhancement, and the integration of innovative functionalities. His impactful contributions and collaborative spirit consistently drive project success."
 ];
 
 export const SkillContent = [
@@ -171,7 +168,7 @@ export const CognizantExperience = [
     title: "Software Engineer",
     company: "Cognizant Technology Solutions Ltd.",
     duration: "january 2022 - Present (3+ years)",
-    description:"Got to chance work with big clients like Google, Verizon etc. Received recognizations and awards for my work and dedication.",
+    description:"Delivered high-quality web development solutions for key clients like Google and Verizon, resulting in notable recognition and awards that acknowledge my dedication and the value I brought to their projects",
   }
 ];
 
@@ -215,7 +212,7 @@ export const YontechExperience = [
     title: "Software Engineer",
     company: "Yontech Tech Solutions",
     duration: "September 2020 - December 2021 (1+ year)",
-    description:"Started my IT journey from here, working with closely to founder and directors to develop and maintain multiple websites and applications. ",
+    description:"Collaborated Directly with Founders & Directors to Drive Web Development Initiatives.",
   }
 ];
 
@@ -244,7 +241,7 @@ export const EducationContent = [
     institution: "Dr. A.P.J. Abdul Kalam Technical University, Lucknow",
     duration: "August 2016 - September 2020",
     description:
-      "Focused on web development, programming languages, and database management. Actively involved in coding clubs and hackathons, where I developed several web applications using HTML, CSS, JavaScript, and WordPress. Completed a project on developing a Deep Learning based Chatbot for Medical Assistance. Using Python, TensorFlow, Pandas.",
+    "Focused on web development, programming languages, and database management. Gained practical experience through coding clubs and hackathons, developing web applications with HTML, CSS, JavaScript, and WordPress. Notable Project: Deep Learning based Chatbot for Medical Assistance (Python, TensorFlow, Pandas).",
   },
   {
     degree: "Intermediate (12th Grade) - 77%",
