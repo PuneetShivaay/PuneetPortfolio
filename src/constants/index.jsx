@@ -174,10 +174,17 @@ export const CognizantExperience = [
 
 export const CognizantProjectExperience = [
   {
+    client: "Directv",
+    project: "5 - Directv IT Services",
+    role: "Front-End Developer",
+    duration: "April 2025 – Present",
+    description:
+"• Collaborate with development teams to ensure proper implementation and propagation of the X-Correlation ID across all relevant application tiers, services, and APIs. This includes code instrumentation and configuration within the application codebase.\n• Work on the application's logging framework to ensure that the X-Correlation ID is consistently included in log messages, making it searchable and correlatable in Dynatrace. \n• Develop and maintain integrations with Dynatrace and Quantum Metric APIs to facilitate the retrieval and analysis of data based on the X-Correlation ID. This might involve custom dashboards or automated scripts. \n• Establish and enforce standards for error logging within the application, ensuring that sufficient context, including the X-Correlation ID, is captured for effective incident analysis. \n•  Utilize Dynatrace and Quantum Metric, leveraging the X-Correlation ID, to identify performance bottlenecks within the application code and collaborate with development teams on optimization strategies. \n• Actively participate in the analysis of complex incidents, using the X-Correlation ID to trace the flow of requests and pinpoint the exact location of errors within the application codebase. \n• Develop scripts and tools to automate the process of querying logs and correlating data between Dynatrace and Quantum Metric using the X-Correlation ID, improving efficiency for incident responders. \n•  Educate other developers on the importance and proper usage of the X-Correlation ID for observability and troubleshooting. \n• Work closely with infrastructure and operations teams to ensure the underlying systems support the effective use of X-Correlation IDs for end-to-end tracing."   },
+  {
     client: "Verizon",
     project: "4 - Verizon Flex Dev",
     role: "Front-End Developer",
-    duration: "Jan 2025 – Present",
+    duration: "Jan 2025 – March 2025",
     description:
     "• Spearheaded the development of key features and independent applications using React, JavaScript, and Tailwind CSS, directly enhancing customer support workflows and improving operational efficiency. \n• Engineered a reusable UI component library, resulting in a 40% reduction in development time and ensuring consistent code quality across multiple projects. \n• Achieved a 99% code reliability score through the implementation of comprehensive unit testing, significantly minimizing production issues. \n• Optimized cross-device compatibility and implemented responsive designs, leading to an improved user experience across all screen sizes and devices. \n• Led code reviews for front-end team & mentored junior developers, fostering a culture of high code quality & knowledge sharing. \n• Implemented advanced state management solutions using Redux and Context API to build complex and scalable user interfaces, enhancing application performance. \n• Actively participated in Agile/Scrum methodologies, contributing to sprint planning, daily stand-ups, and retrospectives to ensure timely and efficient project delivery."
    },
@@ -243,21 +250,6 @@ export const EducationContent = [
     description:
     "Focused on web development, programming languages, and database management. Gained practical experience through coding clubs and hackathons, developing web applications with HTML, CSS, JavaScript, and WordPress. Notable Project: Deep Learning based Chatbot for Medical Assistance (Python, TensorFlow, Pandas).",
   },
-  {
-    degree: "Intermediate (12th Grade) - 77%",
-    institution: "Uttar Pradesh State Board",
-    duration: "July 2014 - June 2016",
-    description:
-    "Got 1st Prize in Public Speaking by State Bank of India(2015) and 2nd Prize in School Cricket Match (2016). Involved in many activities like School Play and Educational Fest.",
-  },
-  {
-    degree: "Matriculation (10th Grade) - 87%",
-    institution: "Uttar Pradesh State Board",
-    duration: "July 2013 - June 2014",
-    description:
-    "Received award of execellence for good academic skills and being top performer in the academics.",
-  },
-
 ];
 
 export const SOCIAL_MEDIA_LINKS = [

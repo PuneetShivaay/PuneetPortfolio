@@ -7,6 +7,44 @@ import { YontechExperience } from "../constants";
 import { YontechProjectExperience } from "../constants";
 
 const WorkExperience = () => {
+
+  //this function is used to calculate total years of experience
+  function calculateExperience(joiningDate) {
+    // Convert the joining date string to a Date object
+    const joiningDateObj = new Date(joiningDate);
+
+    // Get the current date
+    const currentDate = new Date();
+
+    // Calculate the difference in years
+    let experienceYears = currentDate.getFullYear() - joiningDateObj.getFullYear();
+    let experienceMonths = currentDate.getMonth() - joiningDateObj.getMonth();
+
+    // Adjust for cases where the current date is before the joining date in the year
+    if (currentDate.getDate() < joiningDateObj.getDate()) {
+      experienceMonths -= 1;
+    }
+
+    if (experienceMonths < 0) {
+      experienceYears -= 1;
+      experienceMonths += 12;
+    }
+
+    return {
+      years: experienceYears,
+      months: experienceMonths
+    };
+  }
+
+
+  const joiningDate = "2020-09-25";
+  const experience = calculateExperience(joiningDate);
+
+  //The Above function is used to calculate total years of experience
+
+
+
+
   return (
     <section className="pt-20" id="work">
       <motion.h2
@@ -17,7 +55,7 @@ const WorkExperience = () => {
       >
         Work Experience
       </motion.h2>
-      <p className="text-sm text-stone-300 text-center">Sep 2020 - Present (4.6+ Years)</p>
+      <p className="text-sm text-stone-300 text-center">Sep 2020 - Present ({experience.years}.{experience.months}+ Years)</p>
 
       <motion.div
         initial={{ opacity: 0 }}
@@ -40,9 +78,9 @@ const WorkExperience = () => {
             <p className="text-sm text-stone-300 text-center">
               {CognizantExperience.duration}
             </p>
-            <p className="mt-2 text-base text-center">
+            {/* <p className="mt-2 text-base text-center">
               {CognizantExperience.description}
-            </p>
+            </p> */}
 
             {CognizantProjectExperience.map(
               (CognizantProjectExperience, index) => (
@@ -102,9 +140,9 @@ const WorkExperience = () => {
             <p className="text-sm text-stone-300 text-center">
               {YontechExperience.duration}
             </p>
-            <p className="mt-2 text-base text-center">
+            {/* <p className="mt-2 text-base text-center">
               {YontechExperience.description}
-            </p>
+            </p> */}
 
             {YontechProjectExperience.map((YontechProjectExperience, index) => (
               <motion.div
