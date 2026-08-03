@@ -1,47 +1,62 @@
-<div align="center">
-<img alt="Portfolio" src="https://github.com/dillionverma/portfolio/assets/16860528/57ffca81-3f0a-4425-b31d-094f61725455" width="90%">
-</div>
 
-# Portfolio [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdillionverma%2Fportfolio)
+# Puneet Portfolio
 
-Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://magicui.design/), deployed on Vercel.
+Personal portfolio and technical blog built with Next.js and TypeScript. It demonstrates a modular component system, MDX-based content, and optimized Next.js image and layout patterns.
 
-# Features
+## Quick start
 
-- Setup only takes a few minutes by editing the [single config file](./src/data/resume.tsx)
-- Built using Next.js 14, React, Typescript, Shadcn/UI, TailwindCSS, Framer Motion, Magic UI
-- Includes a blog
-- Responsive for different devices
-- Optimized for Next.js and Vercel
+- Clone the repository:
 
-# Getting Started Locally
+```bash
+git clone https://github.com/PuneetShivaay/PuneetPortfolio.git
+cd PuneetPortfolio
+```
 
-1. Clone this repository to your local machine:
+- Install dependencies and run the dev server:
 
-   ```bash
-   git clone https://github.com/dillionverma/portfolio
-   ```
+```bash
+pnpm install
+pnpm dev
+```
 
-2. Move to the cloned directory
+- Build for production:
 
-   ```bash
-   cd portfolio
-   ```
+```bash
+pnpm build
+pnpm start
+```
 
-3. Install dependencies:
+## Project overview
 
-   ```bash
-   pnpm install
-   ```
+- **Tech stack:** Next.js, TypeScript, MDX, PostCSS
+- **Styling:** Global CSS + PostCSS
+- **Content:** MDX files drive the blog under `content/`
 
-4. Start the local Server:
+## Repository structure
 
-   ```bash
-   pnpm dev
-   ```
+- **package.json**: Project metadata and scripts ([package.json](package.json)).
+- **content/**: MDX blog posts and articles (e.g. [content/typescript-best-practices.mdx](content/typescript-best-practices.mdx)).
+- **public/**: Static assets and fonts ([public/](public/)).
+- **src/app/**: Next.js App Router routes and pages ([src/app/layout.tsx](src/app/layout.tsx), [src/app/page.tsx](src/app/page.tsx)).
+- **src/components/**: Reusable UI components and subfolders ([src/components/](src/components/)).
+- **src/components/mdx/**: MDX-specific components (code blocks, media containers).
+- **src/lib/**: Utility helpers and remark/rehype plugins ([src/lib/utils.ts](src/lib/utils.ts)).
+- **src/data/**: Personal data and configuration (resume/profile) ([src/data/resume.tsx](src/data/resume.tsx)).
+- **src/mdx-components.tsx**: MDX component mapping and render helpers.
 
-5. Open the [Config file](./src/data/resume.tsx) and make changes
+## Editing content
 
-# License
+- Update your profile and resume data in [src/data/resume.tsx](src/data/resume.tsx).
+- Add or edit posts in `content/` as `.mdx` files.
 
-Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
+## Deployment
+
+- Vercel is recommended for zero-config deployment with the App Router. Alternatively, use any platform that supports Next.js 14.
+
+## Contributing
+
+- Feel free to open issues or PRs for improvements. For small edits, update content in `content/` or tweak components in `src/components/`.
+
+## License
+
+- Licensed under the MIT License — see [LICENSE](LICENSE).
