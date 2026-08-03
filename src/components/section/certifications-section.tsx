@@ -9,9 +9,7 @@ import { ExternalLink, Award } from "lucide-react";
 const BLUR_FADE_DELAY = 0.04;
 
 export default function CertificationsSection() {
-  if (!DATA.certifications || DATA.certifications.length === 0) return null;
-
-  return (
+if (!DATA.certifications || (DATA.certifications as unknown as any[]).length === 0) return null;
     <div className="flex min-h-0 flex-col gap-y-6">
       <BlurFade delay={BLUR_FADE_DELAY * 14}>
         <h2 className="text-xl font-bold">Courses & Certificates</h2>
