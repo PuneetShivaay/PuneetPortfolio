@@ -12,36 +12,49 @@ export const DATA = {
   summary:
     "Experienced Frontend Software Engineer skilled in frontend architecture, reusable component libraries, REST API integration, authentication, and web performance optimization. Proven track record in delivering high-quality software in Agile environments, driving enterprise operations efficiency, and scaling production web applications.",
   avatarUrl: "/puneetphoto.jpg", // Add your photo in /public/me.jpg or replace with external image URL
-  skills: [
+skills: [
+    // Frontend Architecture (Primary Focus)
     "React.js",
     "React 18",
     "Next.js",
-    "JavaScript (ES6+)",
     "TypeScript",
-    "Tailwind CSS",
+    "JavaScript (ES6+)",
     "Redux",
     "Context API",
-    "Node.js",
-    "Express.js",
+    "Tailwind CSS",
     "HTML5",
     "CSS3",
     "Bootstrap",
-    "REST APIs",
-    "Firebase",
+    "Responsive Design",
+    "Component Library Development",
+
+    // Cloud, AI & Backend
     "Google Cloud Platform (GCP)",
+    "Agentic AI",
+    "Firebase",
     "Azure App Proxy",
+    "Node.js",
+    "Express.js",
+    "REST APIs",
+    "Python",
+
+    // DevOps, Performance & Tooling
     "Git",
     "GitHub",
-    "Jenkins",
     "Azure DevOps",
+    "Jenkins",
     "Harness",
     "ArgoCD",
+    "GitOps",
+    "Postman",
     "Dynatrace",
     "Quantum Metric",
     "Core Web Vitals",
-    "Python",
+
+    // Mobile & Methodologies
     "Flutter",
     "Dart",
+    "Agile / Scrum",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
