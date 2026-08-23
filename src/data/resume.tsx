@@ -247,24 +247,24 @@ skills: [
     },
   ],
   projects: [
-    {
-      title: "DirecTV Nexus",
-      href: "#",
-      dates: "2025",
-      active: true,
-      description:
-        "Co-built a secure full-stack collaboration platform using React.js, Node.js, and Azure. Selected as a global finalist among 58,000+ participants in an enterprise hackathon.",
-      technologies: [
-        "React.js",
-        "Node.js",
-        "Azure",
-        "JavaScript",
-        "Tailwind CSS",
-      ],
-      links: [],
-      image: "",
-      video: "",
-    },
+    // {
+    //   title: "DirecTV Nexus",
+    //   href: "#",
+    //   dates: "2025",
+    //   active: true,
+    //   description:
+    //     "Co-built a secure full-stack collaboration platform using React.js, Node.js, and Azure. Selected as a global finalist among 58,000+ participants in an enterprise hackathon.",
+    //   technologies: [
+    //     "React.js",
+    //     "Node.js",
+    //     "Azure",
+    //     "JavaScript",
+    //     "Tailwind CSS",
+    //   ],
+    //   links: [],
+    //   image: "",
+    //   video: "",
+    // },
     {
       title: "PetMets - Web & Mobile",
       href: "https://petmets.in/",
