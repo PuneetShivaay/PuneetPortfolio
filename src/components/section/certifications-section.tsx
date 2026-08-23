@@ -52,7 +52,10 @@ export default function CertificationsSection() {
                     </Link>
                   )}
                 </div>
-                <p className="text-[11px] sm:text-xs text-muted-foreground mt-0.5">{cert.issuer}</p>
+                <div className="flex items-center justify-between text-[11px] sm:text-xs text-muted-foreground mt-0.5">
+                  <span>{cert.issuer}</span>
+                  {cert.date && <span>{cert.date}</span>}
+                </div>
               </div>
             </div>
           </BlurFade>
