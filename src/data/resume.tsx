@@ -132,6 +132,13 @@ export const DATA = {
 
   certifications: [
     {
+      title: "Cloud Technical Series: Agentic AI Edition",
+      issuer: "Google Cloud",
+      date: "2026",
+      logoUrl: "/GoogleAgenticAI.png",
+      credentialUrl: "https://www.credly.com/badges/a1673997-1b81-4e73-9be1-6457da24c57c",
+    },
+    {
       title: "Google Cloud Certified - Cloud Digital Leader",
       issuer: "Google Cloud",
       date: "2024",
