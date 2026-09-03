@@ -3,7 +3,13 @@
 
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/utils";
-import { ArrowUpRight, FolderGit2 } from "lucide-react";
+import { 
+  ArrowUpRight, 
+  FolderGit2, 
+  Smartphone, 
+  Bot, 
+  ShieldCheck 
+} from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import Markdown from "react-markdown";
@@ -11,10 +17,25 @@ import Markdown from "react-markdown";
 function ProjectLogo({ src, alt }: { src?: string; alt: string }) {
   const [imageError, setImageError] = useState(false);
 
+  // Dynamic contextual fallback icon based on title keywords
+  const getFallbackIcon = () => {
+    const lower = alt.toLowerCase();
+    if (lower.includes("app") || lower.includes("mobile") || lower.includes("converter")) {
+      return <Smartphone className="size-4 text-muted-foreground" />;
+    }
+    if (lower.includes("medical") || lower.includes("chatbot") || lower.includes("learning")) {
+      return <Bot className="size-4 text-muted-foreground" />;
+    }
+    if (lower.includes("secure") || lower.includes("cloud") || lower.includes("file")) {
+      return <ShieldCheck className="size-4 text-muted-foreground" />;
+    }
+    return <FolderGit2 className="size-4 text-muted-foreground" />;
+  };
+
   if (!src || imageError) {
     return (
       <div className="size-9 p-2 border rounded-full shadow-sm ring-2 ring-border bg-muted flex items-center justify-center flex-none">
-        <FolderGit2 className="size-4 text-muted-foreground" />
+        {getFallbackIcon()}
       </div>
     );
   }
@@ -64,15 +85,15 @@ export function ProjectCard({
         className
       )}
     >
-      {/* Header: Logo, Title, Dates & Arrow Link */}
+      {/* Header: Logo, Multi-line Title, Dates & Top-right Arrow */}
       <div className="flex items-start justify-between gap-3">
-        <div className="flex items-center gap-3 min-w-0">
+        <div className="flex items-start gap-3 min-w-0">
           <ProjectLogo src={image} alt={title} />
           <div className="flex flex-col min-w-0">
-            <h3 className="font-semibold text-base leading-tight text-foreground truncate">
+            <h3 className="font-semibold text-base leading-snug text-foreground line-clamp-2">
               {title}
             </h3>
-            <time className="text-xs text-muted-foreground tabular-nums mt-0.5">
+            <time className="text-xs text-muted-foreground tabular-nums mt-1">
               {dates}
             </time>
           </div>
@@ -94,10 +115,10 @@ export function ProjectCard({
         <Markdown>{description}</Markdown>
       </div>
 
-      {/* External Badges / Links (e.g. Source, Website) */}
-      {links && links.length > 0 && (
-        <div className="flex flex-wrap gap-2 mb-3">
-          {links.map((item, idx) => (
+      {/* External Badges / Links (Source, Website, etc.) */}
+      <div className="flex flex-wrap items-center gap-2 mb-3 min-h-[26px]">
+        {links && links.length > 0 &&
+          links.map((item, idx) => (
             <Link
               href={item.href ?? "#"}
               key={idx}
@@ -106,7 +127,7 @@ export function ProjectCard({
               className="inline-flex"
             >
               <Badge
-                className="flex items-center gap-1.5 text-[10px] sm:text-xs bg-secondary text-secondary-foreground hover:bg-secondary/80 border border-border/50 px-2 py-0.5"
+                className="flex items-center gap-1.5 text-[10px] sm:text-xs bg-secondary text-secondary-foreground hover:bg-secondary/80 border border-border/50 px-2.5 py-0.5"
                 variant="secondary"
               >
                 {item.icon}
@@ -114,8 +135,7 @@ export function ProjectCard({
               </Badge>
             </Link>
           ))}
-        </div>
-      )}
+      </div>
 
       {/* Tech Stack Tags */}
       {tags && tags.length > 0 && (
