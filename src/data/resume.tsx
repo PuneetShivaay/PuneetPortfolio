@@ -12,7 +12,8 @@ export const DATA = {
   summary:
     "Experienced Frontend Software Engineer skilled in frontend architecture, reusable component libraries, REST API integration, authentication, and web performance optimization. Proven track record in delivering high-quality software in Agile environments, driving enterprise operations efficiency, and scaling production web applications.",
   avatarUrl: "/puneetphoto.jpg", // Add your photo in /public/me.jpg or replace with external image URL
-skills: [
+  
+  skills: [
     // Frontend Architecture (Primary Focus)
     "React.js",
     "React 18",
@@ -56,6 +57,7 @@ skills: [
     "Dart",
     "Agile / Scrum",
   ],
+
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     {
@@ -64,6 +66,7 @@ skills: [
       label: "Resume",
     },
   ],
+
   contact: {
     email: "PuneetShivaay@gmail.com",
     tel: "+918545083648",
@@ -199,27 +202,31 @@ skills: [
       credentialUrl: "https://www.coursera.org/account/accomplishments/certificate/3T9FGHD4FXPD",
     },
   ],
+
   leadership: [
     {
-      role: "Volunteer & Mentor",
       organization: "Cognizant Outreach",
+      role: "Volunteer & Mentor",
       dates: "Jan 2022 – Jun 2022",
       description:
         "Mentored 60+ employees and 200+ students across Cognizant's social initiative programs.",
+      certificateUrl: "https://your-certificate-or-badge-url.com", // Add link here (or omit if none)
     },
     {
-      role: "Course Instructor",
       organization: "Expertrons",
+      role: "Course Instructor",
       dates: "Jun 2021 – Jul 2021",
       description:
         "Created and delivered a Web Development curriculum, teaching and mentoring active learners.",
+      certificateUrl: "https://your-certificate-url.com",
     },
     {
-      role: "Mentor",
       organization: "Guruphoria",
+      role: "Founder & Mentor",
       dates: "Aug 2020 – Dec 2021",
       description:
         "Mentored students in programming and core language skills via live online sessions.",
+      certificateUrl: "https://youtube.com/@Guruphoria", // Or your channel/platform link
     },
   ],
 
@@ -229,7 +236,7 @@ skills: [
       issuer: "Guinness World Records / Cognizant Vibe Coding",
       year: "2025",
       description:
-        "Contributed to setting a official Guinness World Record during Cognizant Vibe Coding by developing a technical solution as part of a global engineering hackathon.",
+        "Contributed to setting an official Guinness World Record during Cognizant Vibe Coding by developing a technical solution as part of a global engineering hackathon.",
     },
     {
       title: "Cognizant Cheers Award",
@@ -246,27 +253,10 @@ skills: [
         "Recognized for contributions to environmental and social initiatives.",
     },
   ],
+
   projects: [
-    // {
-    //   title: "DirecTV Nexus",
-    //   href: "#",
-    //   dates: "2025",
-    //   active: true,
-    //   description:
-    //     "Co-built a secure full-stack collaboration platform using React.js, Node.js, and Azure. Selected as a global finalist among 58,000+ participants in an enterprise hackathon.",
-    //   technologies: [
-    //     "React.js",
-    //     "Node.js",
-    //     "Azure",
-    //     "JavaScript",
-    //     "Tailwind CSS",
-    //   ],
-    //   links: [],
-    //   image: "",
-    //   video: "",
-    // },
     {
-      title: "PetMets - Web & Mobile",
+      title: "PetMets - Web & Mobile App (PlayStore)",
       href: "https://petmets.in/",
       dates: "2024",
       active: true,
@@ -279,13 +269,20 @@ skills: [
         "Cloud Storage",
         "Tailwind CSS",
       ],
-      links: [{
-        type: "Website",
-        href: "https://petmets.in/",
-        icon: <Icons.globe className="size-3" />, // Or Lucide icon like <Globe className="size-3" />
-      },],
+      links: [
+        {
+          type: "PlayStore",
+          href: "https://play.google.com/store/apps/details?id=com.petmets.petmets&hl=en_IN",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Website",
+          href: "https://petmets.in/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
       image: "/petmets.png",
-      video: "",
+      video: "https://www.youtube.com/shorts/AFTp5YVwvac",
     },
     {
       title: "Website-to-App Converter",
@@ -325,13 +322,19 @@ skills: [
     },
     {
       title: "Secure Cloud File Sharing Platform",
-      href: "#",
+      href: "https://github.com/PuneetShivaay/Online-File-Sharing-Portal",
       dates: "2023",
       active: true,
       description:
         "Developed a secure cloud file management application using Firebase, implementing Role-Based Access Control (RBAC) and bandwidth download constraints.",
       technologies: ["React.js", "Firebase", "RBAC", "Cloud Storage"],
-      links: [],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/PuneetShivaay/Online-File-Sharing-Portal",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
       image: "",
       video: "",
     },
@@ -343,7 +346,7 @@ skills: [
       dates: "2025",
       location: "Global",
       description:
-        "Contributed to setting a official Guinness World Record during Cognizant Vibe Coding by developing a technical solution as part of a global hackathon.",
+        "Contributed to setting an official Guinness World Record during Cognizant Vibe Coding by developing a technical solution as part of a global hackathon.",
       image: "",
       links: [],
     },
