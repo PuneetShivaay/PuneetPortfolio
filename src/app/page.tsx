@@ -43,7 +43,7 @@ export default function Page() {
               <BlurFade delay={BLUR_FADE_DELAY * 2} className="pt-3">
                 <div className="flex flex-wrap items-center gap-3">
                   <a
-                    href="/Puneet_Kumar_Resume.pdf"
+                    href="/docs/Puneet_Kumar_Resume.pdf"
                     download="Puneet_Kumar_Resume.pdf"
                     className="inline-flex items-center gap-2 rounded-xl bg-foreground text-background px-4 py-2 text-sm font-medium transition hover:opacity-90 active:scale-95 shadow-sm"
                   >
@@ -51,7 +51,7 @@ export default function Page() {
                     Download Resume
                   </a>
                   <a
-                    href="/Puneet_Kumar_Resume.pdf"
+                    href="/docs/Puneet_Kumar_Resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 rounded-xl border border-border bg-secondary/30 text-foreground px-4 py-2 text-sm font-medium transition hover:bg-secondary/60 active:scale-95"

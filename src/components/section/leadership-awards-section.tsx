@@ -2,12 +2,12 @@
 
 import BlurFade from "@/components/magicui/blur-fade";
 import { DATA } from "@/data/resume";
-import { ArrowUpRight, Award, ExternalLink, Users } from "lucide-react";
+import { ArrowUpRight, Award, ExternalLink, Users, Youtube } from "lucide-react";
 import Link from "next/link";
 
 const BLUR_FADE_DELAY = 0.04;
 
-export default function LeadershipAndAwardsSection() {
+export default function LeadershipSection() {
   return (
     <div className="flex flex-col gap-12">
       {DATA.leadership && DATA.leadership.length > 0 && (
@@ -26,25 +26,26 @@ export default function LeadershipAndAwardsSection() {
                 delay={BLUR_FADE_DELAY * 16 + id * 0.05}
               >
                 <div className="flex flex-col justify-between p-4 rounded-xl border border-border/50 bg-secondary/15 hover:border-border hover:bg-secondary/25 transition-all duration-200 h-full">
-                  {/* Top Block: Title, Top-Right Link, Role, Date */}
                   <div>
+                    {/* Header: Organization Name & Website Link */}
                     <div className="flex items-start justify-between gap-2">
                       <h3 className="font-semibold text-sm text-foreground">
                         {item.organization}
                       </h3>
-                      {item.certificateUrl && (
+                      {item.websiteUrl && (
                         <Link
-                          href={item.certificateUrl}
+                          href={item.websiteUrl}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-muted-foreground hover:text-foreground transition-colors p-0.5"
-                          aria-label={`View certificate for ${item.organization}`}
+                          className="text-muted-foreground hover:text-foreground transition-colors p-0.5 flex-none"
+                          aria-label={`Visit ${item.organization}`}
                         >
                           <ArrowUpRight className="size-3.5" />
                         </Link>
                       )}
                     </div>
 
+                    {/* Role & Date Subheader */}
                     <div className="mt-1 flex flex-col gap-0.5">
                       <span className="text-xs font-medium text-emerald-400">
                         {item.role}
@@ -60,18 +61,22 @@ export default function LeadershipAndAwardsSection() {
                     </p>
                   </div>
 
-                  {/* Optional Bottom Certificate Badge / Button */}
-                  {item.certificateUrl && (
-                    <div className="pt-3 mt-3 border-t border-border/30">
+                  {/* Bottom Action (PDF Credential or YouTube Channel) */}
+                  {item.credentialUrl && (
+                    <div className="pt-3 mt-4 border-t border-border/30">
                       <Link
-                        href={item.certificateUrl}
+                        href={item.credentialUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-1.5 text-[11px] font-medium text-muted-foreground hover:text-emerald-400 transition-colors"
                       >
-                        <Award className="size-3" />
-                        <span>View Credential</span>
-                        <ExternalLink className="size-2.5 opacity-70" />
+                        {item.type === "youtube" ? (
+                          <Youtube className="size-3.5 text-red-500" />
+                        ) : (
+                          <Award className="size-3.5" />
+                        )}
+                        <span>{item.credentialLabel || "View Credential"}</span>
+                        <ExternalLink className="size-2.5 opacity-60" />
                       </Link>
                     </div>
                   )}

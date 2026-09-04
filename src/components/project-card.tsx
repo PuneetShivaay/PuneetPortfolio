@@ -17,7 +17,6 @@ import Markdown from "react-markdown";
 function ProjectLogo({ src, alt }: { src?: string; alt: string }) {
   const [imageError, setImageError] = useState(false);
 
-  // Dynamic contextual fallback icon based on title keywords
   const getFallbackIcon = () => {
     const lower = alt.toLowerCase();
     if (lower.includes("app") || lower.includes("mobile") || lower.includes("converter")) {
@@ -34,7 +33,7 @@ function ProjectLogo({ src, alt }: { src?: string; alt: string }) {
 
   if (!src || imageError) {
     return (
-      <div className="size-9 p-2 border rounded-full shadow-sm ring-2 ring-border bg-muted flex items-center justify-center flex-none">
+      <div className="size-9 p-2 border rounded-full shadow-sm ring-1 ring-border bg-muted flex items-center justify-center flex-none">
         {getFallbackIcon()}
       </div>
     );
@@ -44,7 +43,7 @@ function ProjectLogo({ src, alt }: { src?: string; alt: string }) {
     <img
       src={src}
       alt={alt}
-      className="size-9 p-1 border rounded-full shadow-sm ring-2 ring-border overflow-hidden object-contain bg-background flex-none"
+      className="size-9 p-1 border rounded-full shadow-sm ring-1 ring-border overflow-hidden object-contain bg-background flex-none"
       onError={() => setImageError(true)}
     />
   );
@@ -81,19 +80,19 @@ export function ProjectCard({
   return (
     <div
       className={cn(
-        "flex flex-col h-full border border-border rounded-xl p-5 hover:ring-2 hover:ring-border transition-all duration-200 bg-card",
+        "flex flex-col h-full border border-border/70 rounded-xl p-4 sm:p-4.5 hover:border-border hover:ring-1 hover:ring-border/60 transition-all duration-200 bg-card",
         className
       )}
     >
-      {/* Header: Logo, Multi-line Title, Dates & Top-right Arrow */}
+      {/* Header: Logo, Clear Readable Title, Dates & Link Arrow */}
       <div className="flex items-start justify-between gap-3">
         <div className="flex items-start gap-3 min-w-0">
           <ProjectLogo src={image} alt={title} />
           <div className="flex flex-col min-w-0">
-            <h3 className="font-semibold text-base leading-snug text-foreground line-clamp-2">
+            <h3 className="font-semibold text-[15px] sm:text-base leading-snug text-foreground line-clamp-2">
               {title}
             </h3>
-            <time className="text-xs text-muted-foreground tabular-nums mt-1">
+            <time className="text-xs text-muted-foreground tabular-nums mt-0.5">
               {dates}
             </time>
           </div>
@@ -110,15 +109,15 @@ export function ProjectCard({
         </Link>
       </div>
 
-      {/* Description */}
-      <div className="text-xs sm:text-sm flex-1 prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert my-4">
+      {/* Description: Readable font size without excessive margin bloat */}
+      <div className="text-xs sm:text-sm text-muted-foreground leading-relaxed my-3 flex-1 prose max-w-full text-pretty font-sans dark:prose-invert">
         <Markdown>{description}</Markdown>
       </div>
 
-      {/* External Badges / Links (Source, Website, etc.) */}
-      <div className="flex flex-wrap items-center gap-2 mb-3 min-h-[26px]">
-        {links && links.length > 0 &&
-          links.map((item, idx) => (
+      {/* Action Badges / Links */}
+      {links && links.length > 0 && (
+        <div className="flex flex-wrap items-center gap-2 mb-2.5">
+          {links.map((item, idx) => (
             <Link
               href={item.href ?? "#"}
               key={idx}
@@ -127,7 +126,7 @@ export function ProjectCard({
               className="inline-flex"
             >
               <Badge
-                className="flex items-center gap-1.5 text-[10px] sm:text-xs bg-secondary text-secondary-foreground hover:bg-secondary/80 border border-border/50 px-2.5 py-0.5"
+                className="flex items-center gap-1.5 text-xs bg-secondary text-secondary-foreground hover:bg-secondary/80 border border-border/50 px-2.5 py-1"
                 variant="secondary"
               >
                 {item.icon}
@@ -135,11 +134,12 @@ export function ProjectCard({
               </Badge>
             </Link>
           ))}
-      </div>
+        </div>
+      )}
 
-      {/* Tech Stack Tags */}
+      {/* Tech Stack Badges: Readable text-[10px] */}
       {tags && tags.length > 0 && (
-        <div className="flex flex-wrap gap-1.5 mt-auto pt-2 border-t border-border/30">
+        <div className="flex flex-wrap gap-1.5 mt-auto pt-2.5 border-t border-border/30">
           {tags.map((tag) => (
             <Badge
               key={tag}

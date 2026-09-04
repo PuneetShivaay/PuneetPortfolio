@@ -2,7 +2,8 @@
 
 import BlurFade from "@/components/magicui/blur-fade";
 import { DATA } from "@/data/resume";
-import { Trophy } from "lucide-react";
+import { Award, ExternalLink, Trophy } from "lucide-react";
+import Link from "next/link";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -36,7 +37,9 @@ export default function AwardsSection() {
               </div>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center justify-between gap-2">
-                  <h3 className="font-semibold text-base text-foreground">{award.title}</h3>
+                  <h3 className="font-semibold text-base text-foreground">
+                    {award.title}
+                  </h3>
                   <span className="text-xs font-bold text-amber-500 bg-amber-500/10 px-2 py-0.5 rounded-full flex-none">
                     {award.year}
                   </span>
@@ -45,6 +48,25 @@ export default function AwardsSection() {
                 <p className="text-xs sm:text-sm text-muted-foreground mt-2 leading-relaxed">
                   {award.description}
                 </p>
+
+                {award.certificateUrl && (
+                  <div className="pt-2.5 mt-2.5 border-t border-border/30">
+                    <Link
+                      href={award.certificateUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 text-xs font-medium text-amber-500/90 hover:text-amber-400 transition-colors"
+                    >
+                      <Award className="size-3.5" />
+                      <span>
+                        {award.certificateUrl.includes("sankalptaru")
+                          ? "View Live Tree Tracker"
+                          : "View Credential"}
+                      </span>
+                      <ExternalLink className="size-2.5 opacity-70" />
+                    </Link>
+                  </div>
+                )}
               </div>
             </div>
           </BlurFade>
