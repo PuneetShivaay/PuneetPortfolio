@@ -11,8 +11,8 @@ export const DATA = {
     "Software Engineer with 5+ years of experience designing and developing scalable enterprise web applications for Google and DirecTV using React.js, Next.js, JavaScript, and TypeScript.",
   summary:
     "Experienced Frontend Software Engineer skilled in frontend architecture, reusable component libraries, REST API integration, authentication, and web performance optimization. Proven track record in delivering high-quality software in Agile environments, driving enterprise operations efficiency, and scaling production web applications.",
-  avatarUrl: "/puneetphoto.jpg", // Add your photo in /public/me.jpg or replace with external image URL
-  
+  avatarUrl: "/images/me/puneetphoto.jpg", // Add your photo in /public/me.jpg or replace with external image URL
+
   skills: [
     // Frontend Architecture (Primary Focus)
     "React.js",
@@ -27,7 +27,6 @@ export const DATA = {
     "CSS3",
     "Bootstrap",
     "Responsive Design",
-    "Component Library Development",
 
     // Cloud, AI & Backend
     "Google Cloud Platform (GCP)",
@@ -61,7 +60,7 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     {
-      href: "/Puneet_Kumar_Resume.pdf",
+      href: "/docs/Puneet_Kumar_Resume.pdf",
       icon: FileText,
       label: "Resume",
     },
@@ -95,14 +94,14 @@ export const DATA = {
   work: [
     {
       company: "Cognizant Technology Solutions",
-      logoUrl: "/cognizant.png", // Main Cognizant Logo
+      logoUrl: "/images/companies/cognizant.png", // Main Cognizant Logo
       href: "https://www.cognizant.com/",
       start: "Jan 2022",
       end: "Present",
       clients: [
         {
           clientName: "DirecTV",
-          clientLogo: "/directv.svg", // Place DirecTV logo in /public/directv.png
+          clientLogo: "/images/companies/directv.svg", // Place DirecTV logo in /public/directv.png
           title: "Software Engineer (Frontend Specialist)",
           start: "Jan 2025",
           end: "Present",
@@ -111,7 +110,7 @@ export const DATA = {
         },
         {
           clientName: "Google",
-          clientLogo: "/google.png", // Place Google logo in /public/google.png
+          clientLogo: "/images/companies/google.png", // Place Google logo in /public/google.png
           title: "Software Engineer",
           start: "Jan 2022",
           end: "Dec 2024",
@@ -122,14 +121,14 @@ export const DATA = {
     },
     {
       company: "Yontech Solutions Pvt. Ltd",
-      logoUrl: "/mmp2.jpg",
+      logoUrl: "/images/companies/mmp2.jpg",
       href: "#",
       start: "Sep 2020",
       end: "Dec 2021",
       clients: [
         {
           clientName: "MMP, Aptence, EuNext, ErDr", // No client grouping needed here
-          clientLogo: "/mmp.jpg",
+          clientLogo: "/images/companies/mmp.jpg",
           title: "Software Engineer",
           start: "Sep 2020",
           end: "Dec 2021",
@@ -145,7 +144,7 @@ export const DATA = {
       school: "Dr. A.P.J. Abdul Kalam Technical University",
       href: "https://aktu.ac.in/",
       degree: "Bachelor of Technology (B.Tech.), Computer Science and Engineering",
-      logoUrl: "/aktu.png",
+      logoUrl: "/images/education/aktu.png",
       start: "2016",
       end: "2020",
     },
@@ -153,52 +152,52 @@ export const DATA = {
 
   certifications: [
     {
-      title: "Cloud Technical Series: Agentic AI Edition",
+      title: "Agentic AI - Cloud Technical Series",
       issuer: "Google Cloud",
       date: "2026",
-      logoUrl: "/GoogleAgenticAI.png",
+      logoUrl: "/images/certs/GoogleAgenticAI.png",
       credentialUrl: "https://www.credly.com/badges/a1673997-1b81-4e73-9be1-6457da24c57c",
     },
     {
       title: "Google Cloud Certified - Cloud Digital Leader",
       issuer: "Google Cloud",
       date: "2024",
-      logoUrl: "/GoogleCloud.png", // Place Google Cloud logo/badge image in your /public folder
+      logoUrl: "/images/certs/GoogleCloud.png", // Place Google Cloud logo/badge image in your /public folder
       credentialUrl: "https://www.credly.com/badges/9cd64f3b-9851-4599-9c88-1037ee64ef0a", // Add your verification link if available
     },
     {
       title: "IBM Digital Badge",
       issuer: "IBM",
       date: "2023",
-      logoUrl: "/ibm.png",
+      logoUrl: "/images/certs/ibm.png",
       credentialUrl: "https://www.credly.com/badges/5d56604f-6795-4722-b49f-b44863bd3660/public_url#",
     },
     {
       title: "Neural Networks and Deep Learning",
       issuer: "DeepLearning.AI (Coursera)",
       date: "2023",
-      logoUrl: "/coursera.png",
+      logoUrl: "/images/certs/coursera.png",
       credentialUrl: "https://www.coursera.org/account/accomplishments/certificate/D8TML7SZREZX",
     },
     {
       title: "How to Build an E-Commerce Website with React?",
       issuer: "Scaler (InterviewBit)",
       date: "2022",
-      logoUrl: "/scaler.png",
+      logoUrl: "/images/certs/scaler.png",
       credentialUrl: "https://moonshot.scaler.com/s/sl/1HHegPt-vd",
     },
     {
       title: "Responsive Web Design: HTML5 + CSS3 for Entrepreneurs",
       issuer: "Udemy",
       date: "2021",
-      logoUrl: "/udemy.png",
+      logoUrl: "/images/certs/udemy.png",
       credentialUrl: "https://www.udemy.com/certificate/UC-da024f38-3cec-415b-8597-c34737c0a877/",
     },
     {
       title: "Machine Learning with Python",
       issuer: "Coursera",
       date: "2023",
-      logoUrl: "/coursera.png",
+      logoUrl: "/images/certs/coursera.png",
       credentialUrl: "https://www.coursera.org/account/accomplishments/certificate/3T9FGHD4FXPD",
     },
   ],
@@ -210,15 +209,21 @@ export const DATA = {
       dates: "Jan 2022 – Jun 2022",
       description:
         "Mentored 60+ employees and 200+ students across Cognizant's social initiative programs.",
-      certificateUrl: "https://your-certificate-or-badge-url.com", // Add link here (or omit if none)
+      websiteUrl: "https://www.cognizant.com/us/en/about-cognizant/sustainability-corporate-citizenship/outreach-program",
+      credentialUrl: "/docs/certificates/Outreach_Certificate_of_Appreciation.pdf",
+      credentialLabel: "View Credential",
+      type: "pdf",
     },
     {
       organization: "Expertrons",
-      role: "Course Instructor",
+      role: "Course Instructor & Mentor",
       dates: "Jun 2021 – Jul 2021",
       description:
         "Created and delivered a Web Development curriculum, teaching and mentoring active learners.",
-      certificateUrl: "https://your-certificate-url.com",
+      websiteUrl: "https://expertrons.com/",
+      credentialUrl: "/docs/certificates/Expertrons.pdf",
+      credentialLabel: "View Credential",
+      type: "pdf",
     },
     {
       organization: "Guruphoria",
@@ -226,7 +231,10 @@ export const DATA = {
       dates: "Aug 2020 – Dec 2021",
       description:
         "Mentored students in programming and core language skills via live online sessions.",
-      certificateUrl: "https://youtube.com/@Guruphoria", // Or your channel/platform link
+      websiteUrl: "https://guruphoria.netlify.app/", // Or platform site if you have one
+      credentialUrl: "https://youtube.com/@Guruphoria",
+      credentialLabel: "YouTube Channel",
+      type: "youtube",
     },
   ],
 
@@ -237,6 +245,7 @@ export const DATA = {
       year: "2025",
       description:
         "Contributed to setting an official Guinness World Record during Cognizant Vibe Coding by developing a technical solution as part of a global engineering hackathon.",
+      certificateUrl: "/docs/certificates/Guinness_World_Records_Certificate.pdf",
     },
     {
       title: "Cognizant Cheers Award",
@@ -244,14 +253,16 @@ export const DATA = {
       year: "2024",
       description:
         "Recognized for outstanding client delivery, technical excellence, and presentation skills.",
+      certificateUrl: "/docs/certificates/Cognizant_Cheers_Award.pdf",
     },
     {
       title: "Certificate of Honor",
-      issuer: "SankalpTaru Foundation",
+      issuer: "Cognizant Outreach & SankalpTaru Foundation",
       year: "2022",
       description:
-        "Recognized for contributions to environmental and social initiatives.",
-    },
+        "Honored by Cognizant with a geotagged tree planted in my name for volunteer teaching and mentoring underserved students during weekend outreach programs.",
+      certificateUrl: "https://sankalptaru.org/tree/AGXw6Y/",
+    }
   ],
 
   projects: [
@@ -261,12 +272,11 @@ export const DATA = {
       dates: "2024",
       active: true,
       description:
-        "Engineered a production-ready application using React.js, Firebase Authentication, Cloud Firestore, and Cloud Storage, supporting real-time data synchronization and responsive UI layouts.",
+        "Engineered a production-ready web and mobile platform with secure auth and real-time data sync, enabling pet owners to manage health records, appointments, and activities seamlessly.",
       technologies: [
         "React.js",
+        "Node.js", 
         "Firebase",
-        "Cloud Firestore",
-        "Cloud Storage",
         "Tailwind CSS",
       ],
       links: [
@@ -276,17 +286,22 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
         {
-          type: "Website",
+          type: "Web",
           href: "https://petmets.in/",
           icon: <Icons.globe className="size-3" />,
         },
+        {
+          type: "Source",
+          href: "https://github.com/PuneetShivaay/Convert-Website-into-App",
+          icon: <Icons.github className="size-3" />,
+        },
       ],
-      image: "/petmets.png",
+      image: "/images/projects/petmets.png",
       video: "https://www.youtube.com/shorts/AFTp5YVwvac",
     },
     {
       title: "Website-to-App Converter",
-      href: "https://github.com/PuneetShivaay",
+      href: "https://github.com/PuneetShivaay/Convert-Website-into-App",
       dates: "Open Source",
       active: true,
       description:
@@ -294,32 +309,38 @@ export const DATA = {
       technologies: ["Flutter", "Dart", "Mobile", "Android", "iOS"],
       links: [
         {
-          type: "Source",
-          href: "https://github.com/PuneetShivaay",
+          type: "Flutter App",
+          href: "https://github.com/PuneetShivaay/Convert-Website-into-App",
           icon: <Icons.github className="size-3" />,
         },
+        {
+          type: "React App",
+          href: "https://github.com/PuneetShivaay/Convert-Website-Into-React-Mobile-Mobile-App",
+          icon: <Icons.github className="size-3" />,
+        }
       ],
       image: "",
       video: "",
     },
     {
       title: "Deep Learning Medical Assistance Chatbot",
-      href: "https://github.com/PuneetShivaay",
+      href: "https://github.com/PuneetShivaay/Deep-Learning-Based-Chatbot-For-Medical-Assistance",
       dates: "Open Source",
       active: true,
       description:
         "Engineered an open-source NLP-based chatbot using Python for medical symptom analysis and intent classification. Received 17+ GitHub stars and 14+ forks.",
-      technologies: ["Python", "NLP", "Deep Learning", "Machine Learning"],
+      technologies: ["Python", "NLP", "Deep Learning", "ML"],
       links: [
         {
-          type: "Source",
-          href: "https://github.com/PuneetShivaay",
+          type: "Source Code",
+          href: "https://github.com/PuneetShivaay/Deep-Learning-Based-Chatbot-For-Medical-Assistance",
           icon: <Icons.github className="size-3" />,
         },
       ],
       image: "",
       video: "",
     },
+
     {
       title: "Secure Cloud File Sharing Platform",
       href: "https://github.com/PuneetShivaay/Online-File-Sharing-Portal",
@@ -330,7 +351,12 @@ export const DATA = {
       technologies: ["React.js", "Firebase", "RBAC", "Cloud Storage"],
       links: [
         {
-          type: "Source",
+          type: "Website",
+          href: "https://oticalshare.web.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source Code",
           href: "https://github.com/PuneetShivaay/Online-File-Sharing-Portal",
           icon: <Icons.github className="size-3" />,
         },
