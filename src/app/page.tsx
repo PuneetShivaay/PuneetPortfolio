@@ -12,6 +12,7 @@ import WorkSection from "@/components/section/work-section";
 import CertificationsSection from "@/components/section/certifications-section";
 import LeadershipAndAwardsSection from "@/components/section/leadership-awards-section";
 import { ArrowUpRight, Download, FileText } from "lucide-react";
+import { GoogleText, DirecTVText } from "@/components/brand-text";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -33,11 +34,18 @@ export default function Page() {
                 yOffset={8}
                 text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
               />
-              <BlurFadeText
+              {/* <BlurFadeText
                 className="text-muted-foreground max-w-[600px] md:text-lg lg:text-xl"
                 delay={BLUR_FADE_DELAY}
                 text={DATA.description}
-              />
+              /> */}
+
+              <BlurFade delay={BLUR_FADE_DELAY}>
+                <p className="text-muted-foreground max-w-[600px] md:text-lg lg:text-xl leading-relaxed">
+                  Frontend Software Engineer with 5+ years of experience building enterprise
+                  applications for <GoogleText /> and <DirecTVText /> using React.js and Next.js.
+                </p>
+              </BlurFade>
 
               {/* Resume Download & View Action Buttons */}
               <BlurFade delay={BLUR_FADE_DELAY * 2} className="pt-3">
