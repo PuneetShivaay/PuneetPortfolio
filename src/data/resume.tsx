@@ -8,7 +8,7 @@ export const DATA = {
   location: "Noida, India",
   locationLink: "https://www.google.com/maps/place/Noida",
   description:
-    "Software Engineer with 5+ years of experience designing and developing scalable enterprise web applications for Google and DirecTV using React.js, Next.js, JavaScript, and TypeScript.",
+    "Frontend Software Engineer with 5+ years of experience building enterprise applications for Google and DirecTV using React.js and Next.js.",
   summary:
     "Experienced Frontend Software Engineer skilled in frontend architecture, reusable component libraries, REST API integration, authentication, and web performance optimization. Proven track record in delivering high-quality software in Agile environments, driving enterprise operations efficiency, and scaling production web applications.",
   avatarUrl: "/images/me/puneetphoto.jpg", // Add your photo in /public/me.jpg or replace with external image URL
