@@ -60,7 +60,7 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     {
-      href: "/docs/Puneet_Kumar_Resume.pdf",
+      href: "/docs/resume/PuneetKumarResume.pdf",
       icon: FileText,
       label: "Resume",
     },
