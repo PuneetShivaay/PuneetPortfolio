@@ -152,6 +152,13 @@ export const DATA = {
 
   certifications: [
     {
+      title: "Claude Certified Architect - Foundations",
+      issuer: "Anthropic",
+      date: "2026",
+      logoUrl: "/images/certs/claudeArchitect.png",
+      credentialUrl: "https://www.credly.com/badges/869278b7-1451-46a6-b611-83b00bfdebaf",
+    },
+    {
       title: "Agentic AI - Cloud Technical Series",
       issuer: "Google Cloud",
       date: "2026",
