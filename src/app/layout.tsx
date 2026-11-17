@@ -115,7 +115,10 @@ export default function RootLayout({
     ],
     jobTitle: "Software Engineer",
     description: DATA.description,
-    knowsAbout: DATA.skills,
+    knowsAbout: [
+      ...DATA.skills.core,
+      ...DATA.skills.groups.flatMap((group) => group.items),
+    ],
   };
 
   return (

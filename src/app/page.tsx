@@ -2,6 +2,7 @@
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
@@ -115,19 +116,91 @@ export default function Page() {
       </section>
 
       {/* =========================================================================
+          FEATURED PROJECTS SECTION
+          Renders highlighted web/cloud projects with live demo and GitHub links
+         ========================================================================= */}
+      <section id="projects">
+        <BlurFade delay={BLUR_FADE_DELAY * 7}>
+          <ProjectsSection />
+        </BlurFade>
+      </section>
+
+      {/* =========================================================================
+          SKILLS SECTION
+          Renders technical skill badges and framework chips
+         ========================================================================= */}
+      <section id="skills">
+        <div className="flex min-h-0 flex-col gap-y-4">
+          <BlurFade delay={BLUR_FADE_DELAY * 8}>
+            <h2 className="text-xl font-bold">Skills</h2>
+          </BlurFade>
+
+          {/* All skill groups (including Core Stack) share one uniform card grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {[{ category: "Core Stack", items: DATA.skills.core }, ...DATA.skills.groups].map((group, groupId) => (
+              <BlurFade key={group.category} delay={BLUR_FADE_DELAY * 9 + groupId * 0.05}>
+                <div className="flex flex-col gap-y-2 p-3.5 rounded-xl border border-border/40 bg-secondary/20 h-full">
+                  <h3 className="text-xs font-semibold uppercase tracking-wide text-muted-foreground">
+                    {group.category}
+                  </h3>
+                  <div className="flex flex-wrap gap-1.5">
+                    {group.items.map((skill) => (
+                      <Badge
+                        key={skill}
+                        className="text-xs font-medium border border-foreground/25 hover:border-foreground/50 transition-colors bg-background/50 h-6 px-2.5"
+                        variant="outline"
+                      >
+                        {skill}
+                      </Badge>
+                    ))}
+                  </div>
+                </div>
+              </BlurFade>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* =========================================================================
+          COURSES & CERTIFICATIONS SECTION
+          Renders verified credentials, badges, and verification links
+         ========================================================================= */}
+      <section id="certifications">
+        <BlurFade delay={BLUR_FADE_DELAY * 10}>
+          <CertificationsSection />
+        </BlurFade>
+      </section>
+
+      {/* =========================================================================
+          LEADERSHIP & AWARDS SECTION
+          Renders community contributions, mentorship roles, and honors
+         ========================================================================= */}
+      <LeadershipAndAwardsSection />
+
+      {/* =========================================================================
+          HACKATHONS SECTION
+          Renders hackathon submissions, awards, and project timelines
+         ========================================================================= */}
+      <section id="hackathons">
+        <BlurFade delay={BLUR_FADE_DELAY * 13}>
+          <HackathonsSection />
+        </BlurFade>
+      </section>
+
+      {/* =========================================================================
           EDUCATION SECTION
           Renders degrees, university logos, and graduation timeframes
          ========================================================================= */}
       <section id="education">
         <div className="flex min-h-0 flex-col gap-y-6">
-          <BlurFade delay={BLUR_FADE_DELAY * 7}>
+          <BlurFade delay={BLUR_FADE_DELAY * 14}>
             <h2 className="text-xl font-bold">Education</h2>
           </BlurFade>
           <div className="flex flex-col gap-8">
             {DATA.education.map((education, index) => (
               <BlurFade
                 key={`${education.school}-${index}`}
-                delay={BLUR_FADE_DELAY * 8 + index * 0.05}
+                delay={BLUR_FADE_DELAY * 15 + index * 0.05}
               >
                 <Link
                   href={education.href}
@@ -168,69 +241,6 @@ export default function Page() {
             ))}
           </div>
         </div>
-      </section>
-
-      {/* =========================================================================
-          COURSES & CERTIFICATIONS SECTION
-          Renders verified credentials, badges, and verification links
-         ========================================================================= */}
-      <section id="certifications">
-        <BlurFade delay={BLUR_FADE_DELAY * 9}>
-          <CertificationsSection />
-        </BlurFade>
-      </section>
-
-      {/* =========================================================================
-          SKILLS SECTION
-          Renders technical skill badges and framework chips
-         ========================================================================= */}
-      <section id="skills">
-        <div className="flex min-h-0 flex-col gap-y-4">
-          <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-xl font-bold">Skills</h2>
-          </BlurFade>
-          <div className="flex flex-wrap gap-2">
-            {DATA.skills.map((skill: any, id) => {
-              const skillName = typeof skill === "string" ? skill : skill.name;
-              const SkillIcon = typeof skill === "object" ? skill.icon : null;
-
-              return (
-                <BlurFade key={`${skillName}-${id}`} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                  <div className="border bg-background border-border ring-2 ring-border/20 rounded-xl h-8 w-fit px-4 flex items-center gap-2">
-                    {SkillIcon && <SkillIcon className="size-4 rounded overflow-hidden object-contain" />}
-                    <span className="text-foreground text-sm font-medium">{skillName}</span>
-                  </div>
-                </BlurFade>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      {/* =========================================================================
-          LEADERSHIP & AWARDS SECTION
-          Renders community contributions, mentorship roles, and honors
-         ========================================================================= */}
-      <LeadershipAndAwardsSection />
-
-      {/* =========================================================================
-          FEATURED PROJECTS SECTION
-          Renders highlighted web/cloud projects with live demo and GitHub links
-         ========================================================================= */}
-      <section id="projects">
-        <BlurFade delay={BLUR_FADE_DELAY * 11}>
-          <ProjectsSection />
-        </BlurFade>
-      </section>
-
-      {/* =========================================================================
-          HACKATHONS SECTION
-          Renders hackathon submissions, awards, and project timelines
-         ========================================================================= */}
-      <section id="hackathons">
-        <BlurFade delay={BLUR_FADE_DELAY * 13}>
-          <HackathonsSection />
-        </BlurFade>
       </section>
 
       {/* =========================================================================

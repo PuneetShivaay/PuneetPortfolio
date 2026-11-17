@@ -13,49 +13,63 @@ export const DATA = {
     "Experienced Frontend Software Engineer skilled in frontend architecture, reusable component libraries, REST API integration, authentication, and web performance optimization. Proven track record in delivering high-quality software in Agile environments, driving enterprise operations efficiency, and scaling production web applications.",
   avatarUrl: "/images/me/puneetphoto.jpg", // Add your photo in /public/me.jpg or replace with external image URL
 
-  skills: [
-    // Frontend Architecture (Primary Focus)
-    "React.js",
-    "React 18",
-    "Next.js",
-    "TypeScript",
-    "JavaScript (ES6+)",
-    "Redux",
-    "Context API",
-    "Tailwind CSS",
-    "HTML5",
-    "CSS3",
-    "Bootstrap",
-    "Responsive Design",
-
-    // Cloud, AI & Backend
-    "Google Cloud Platform (GCP)",
-    "Agentic AI",
-    "Firebase",
-    "Azure App Proxy",
-    "Node.js",
-    "Express.js",
-    "REST APIs",
-    "Python",
-
-    // DevOps, Performance & Tooling
-    "Git",
-    "GitHub",
-    "Azure DevOps",
-    "Jenkins",
-    "Harness",
-    "ArgoCD",
-    "GitOps",
-    "Postman",
-    "Dynatrace",
-    "Quantum Metric",
-    "Core Web Vitals",
-
-    // Mobile & Methodologies
-    "Flutter",
-    "Dart",
-    "Agile / Scrum",
-  ],
+  skills: {
+    // Core Stack — the 6 skills that show up in nearly every shipped project
+    core: ["React.js", "Next.js", "TypeScript", "Node.js", "Redux"],
+    groups: [
+      {
+        category: "Frontend",
+        items: [
+          "JavaScript (ES6+)",
+          "Context API",
+          "Tailwind CSS",
+          "HTML5",
+          "CSS3",
+          "Responsive Design",
+        ],
+      },
+      {
+        category: "AI & LLM",
+        items: [
+          "LLM Integration (OpenAI, Claude, Gemini)",
+          "Agentic AI",
+          "RAG",
+          "Multi-Agent Orchestration",
+          "Google ADK",
+          "Vertex AI",
+        ],
+      },
+      {
+        category: "Cloud & Backend",
+        items: [
+          "Firebase",
+          "Azure App Proxy",
+          "Express.js",
+          "REST APIs",
+          "Python",
+          "PostgreSQL",
+          "Google Cloud Platform (GCP)",
+        ],
+      },
+      {
+        category: "DevOps & Performance",
+        items: [
+          "Git",
+          "GitHub",
+          "Azure DevOps",
+          "Jenkins",
+          "Harness",
+          "ArgoCD",
+          "Dynatrace",
+          "Quantum Metric",
+        ],
+      },
+      {
+        category: "Mobile & Methodologies",
+        items: ["Flutter", "Dart", "Agile / Scrum"],
+      },
+    ],
+  },
 
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -143,7 +157,8 @@ export const DATA = {
     {
       school: "Dr. A.P.J. Abdul Kalam Technical University",
       href: "https://aktu.ac.in/",
-      degree: "Bachelor of Technology (B.Tech.), Computer Science and Engineering",
+      degree:
+        "Bachelor of Technology (B.Tech.), Computer Science and Engineering",
       logoUrl: "/images/education/aktu.png",
       start: "2016",
       end: "2020",
@@ -152,60 +167,75 @@ export const DATA = {
 
   certifications: [
     {
+      title: "Build with Gemini",
+      issuer: "Google Cloud",
+      date: "2026",
+      logoUrl: "/images/certs/googleGemini.png",
+      credentialUrl:
+        "https://www.credly.com/badges/08b05115-3d47-48d5-ae7c-c021fc6646b8",
+    },
+    {
       title: "Claude Certified Architect - Foundations",
       issuer: "Anthropic",
       date: "2026",
       logoUrl: "/images/certs/claudeArchitect.png",
-      credentialUrl: "https://www.credly.com/badges/869278b7-1451-46a6-b611-83b00bfdebaf",
+      credentialUrl:
+        "https://www.credly.com/badges/869278b7-1451-46a6-b611-83b00bfdebaf",
     },
     {
       title: "Agentic AI - Cloud Technical Series",
       issuer: "Google Cloud",
       date: "2026",
       logoUrl: "/images/certs/GoogleAgenticAI.png",
-      credentialUrl: "https://www.credly.com/badges/a1673997-1b81-4e73-9be1-6457da24c57c",
+      credentialUrl:
+        "https://www.credly.com/badges/a1673997-1b81-4e73-9be1-6457da24c57c",
     },
     {
       title: "Google Cloud Certified - Cloud Digital Leader",
       issuer: "Google Cloud",
       date: "2024",
       logoUrl: "/images/certs/GoogleCloud.png", // Place Google Cloud logo/badge image in your /public folder
-      credentialUrl: "https://www.credly.com/badges/9cd64f3b-9851-4599-9c88-1037ee64ef0a", // Add your verification link if available
+      credentialUrl:
+        "https://www.credly.com/badges/9cd64f3b-9851-4599-9c88-1037ee64ef0a", // Add your verification link if available
     },
     {
       title: "IBM Digital Badge",
       issuer: "IBM",
       date: "2023",
       logoUrl: "/images/certs/ibm.png",
-      credentialUrl: "https://www.credly.com/badges/5d56604f-6795-4722-b49f-b44863bd3660/public_url#",
+      credentialUrl:
+        "https://www.credly.com/badges/5d56604f-6795-4722-b49f-b44863bd3660/public_url#",
     },
     {
       title: "Neural Networks and Deep Learning",
       issuer: "DeepLearning.AI (Coursera)",
       date: "2023",
       logoUrl: "/images/certs/coursera.png",
-      credentialUrl: "https://www.coursera.org/account/accomplishments/certificate/D8TML7SZREZX",
+      credentialUrl:
+        "https://www.coursera.org/account/accomplishments/certificate/D8TML7SZREZX",
     },
-    {
-      title: "How to Build an E-Commerce Website with React?",
-      issuer: "Scaler (InterviewBit)",
-      date: "2022",
-      logoUrl: "/images/certs/scaler.png",
-      credentialUrl: "https://moonshot.scaler.com/s/sl/1HHegPt-vd",
-    },
+    // {
+    //   title: "How to Build an E-Commerce Website with React?",
+    //   issuer: "Scaler (InterviewBit)",
+    //   date: "2022",
+    //   logoUrl: "/images/certs/scaler.png",
+    //   credentialUrl: "https://moonshot.scaler.com/s/sl/1HHegPt-vd",
+    // },
     {
       title: "Responsive Web Design: HTML5 + CSS3 for Entrepreneurs",
       issuer: "Udemy",
       date: "2021",
       logoUrl: "/images/certs/udemy.png",
-      credentialUrl: "https://www.udemy.com/certificate/UC-da024f38-3cec-415b-8597-c34737c0a877/",
+      credentialUrl:
+        "https://www.udemy.com/certificate/UC-da024f38-3cec-415b-8597-c34737c0a877/",
     },
     {
       title: "Machine Learning with Python",
       issuer: "Coursera",
       date: "2023",
       logoUrl: "/images/certs/coursera.png",
-      credentialUrl: "https://www.coursera.org/account/accomplishments/certificate/3T9FGHD4FXPD",
+      credentialUrl:
+        "https://www.coursera.org/account/accomplishments/certificate/3T9FGHD4FXPD",
     },
   ],
 
@@ -216,8 +246,10 @@ export const DATA = {
       dates: "Jan 2022 – Jun 2022",
       description:
         "Mentored 60+ employees and 200+ students across Cognizant's social initiative programs.",
-      websiteUrl: "https://www.cognizant.com/us/en/about-cognizant/sustainability-corporate-citizenship/outreach-program",
-      credentialUrl: "/docs/certificates/Outreach_Certificate_of_Appreciation.pdf",
+      websiteUrl:
+        "https://www.cognizant.com/us/en/about-cognizant/sustainability-corporate-citizenship/outreach-program",
+      credentialUrl:
+        "/docs/certificates/Outreach_Certificate_of_Appreciation.pdf",
       credentialLabel: "View Credential",
       type: "pdf",
     },
@@ -252,7 +284,7 @@ export const DATA = {
       year: "2025",
       description:
         "Contributed to setting an official Guinness World Record during Cognizant Vibe Coding by developing a technical solution as part of a global engineering hackathon.",
-      certificateUrl: "/docs/certificates/Guinness_World_Records_Certificate.pdf",
+      certificateUrl: "/docs/certificates/Guinness_World_Record.pdf",
     },
     {
       title: "Cognizant Cheers Award",
@@ -269,7 +301,7 @@ export const DATA = {
       description:
         "Honored by Cognizant with a geotagged tree planted in my name for volunteer teaching and mentoring underserved students during weekend outreach programs.",
       certificateUrl: "https://sankalptaru.org/tree/AGXw6Y/",
-    }
+    },
   ],
 
   projects: [
@@ -280,12 +312,7 @@ export const DATA = {
       active: true,
       description:
         "Engineered a production-ready web and mobile platform with secure auth and real-time data sync, enabling pet owners to manage health records, appointments, and activities seamlessly.",
-      technologies: [
-        "React.js",
-        "Node.js", 
-        "Firebase",
-        "Tailwind CSS",
-      ],
+      technologies: ["React.js", "Node.js", "Firebase", "Tailwind CSS"],
       links: [
         {
           type: "PlayStore",
@@ -324,7 +351,7 @@ export const DATA = {
           type: "React App",
           href: "https://github.com/PuneetShivaay/Convert-Website-Into-React-Mobile-Mobile-App",
           icon: <Icons.github className="size-3" />,
-        }
+        },
       ],
       image: "",
       video: "",
@@ -365,6 +392,73 @@ export const DATA = {
         {
           type: "Source Code",
           href: "https://github.com/PuneetShivaay/Online-File-Sharing-Portal",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
+      title: "ConvergeAI",
+      href: "https://github.com/PuneetShivaay/ConvergeAI",
+      dates: "2026",
+      active: true,
+      description:
+        "Built a multi-model GenAI application that synthesizes higher-quality answers from OpenAI, Claude, and Gemini using a self-consistency approach. Deployed with Next.js and TypeScript.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "OpenAI",
+        "Claude",
+        "Gemini",
+        "LLM Integration",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/PuneetShivaay/ConvergeAI",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
+      title: "GuruphoriaBook",
+      href: "https://github.com/PuneetShivaay/GuruphoriaBook",
+      dates: "2026",
+      active: true,
+      description:
+        "Built a NotebookLM-inspired AI research assistant enabling multi-source RAG, grounded chat with citations, and long-term memory. Built with Next.js, TypeScript, and PostgreSQL.",
+      technologies: [
+        "Next.js",
+        "TypeScript",
+        "PostgreSQL",
+        "RAG",
+        "LLM Integration",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/PuneetShivaay/GuruphoriaBook",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
+      title: "DirecTV Nexus",
+      href: "https://github.com/PuneetShivaay/DirecTVNexus",
+      dates: "2026",
+      active: true,
+      description:
+        "Co-built a secure full-stack collaboration platform using React.js, Node.js, and Azure. Selected as a finalist among 58,000+ global participants in Cognizant's enterprise hackathon.",
+      technologies: ["React.js", "Node.js", "Azure"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/PuneetShivaay/DirecTVNexus",
           icon: <Icons.github className="size-3" />,
         },
       ],
